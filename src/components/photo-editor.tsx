@@ -193,7 +193,7 @@ export function PhotoEditor({ imageSrc, onCancel }: PhotoEditorProps) {
       {!!showInput && (
         <div className="pointer-events-auto absolute top-1/2 left-0 w-full -translate-y-1/2 bg-black/50 py-3">
           <input
-            className="w-full bg-transparent text-center font-normal text-3xl text-white placeholder-white/50 outline-none"
+            className="w-full bg-transparent text-center font-normal text-3xl text-white outline-none"
             onBlur={handleBlur}
             onChange={handleChange}
             placeholder="Type something..."
