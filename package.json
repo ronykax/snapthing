@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "fix": "ultracite fix",
+    "check": "ultracite check"
+  },
+  "dependencies": {
+    "@react-oauth/google": "^0.13.5",
+    "@tailwindcss/vite": "^4.3.3",
+    "@tsconfig/vite-react": "^8.1.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "tailwindcss": "^4.3.3",
+    "vite-plugin-pwa": "^1.3.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.4",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "typescript": "~6.0.2",
+    "ultracite": "^7.9.4",
+    "vite": "^8.1.1"
+  }
+}
