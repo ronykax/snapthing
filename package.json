@@ -3,9 +3,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview",
+    "preview": "npm run build && wrangler dev",
     "fix": "ultracite fix",
-    "check": "ultracite check"
+    "check": "ultracite check",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "@react-oauth/google": "^0.13.5",
@@ -17,6 +18,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.4",
+    "@cloudflare/vite-plugin": "^1.45.1",
     "@types/node": "^24.13.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
