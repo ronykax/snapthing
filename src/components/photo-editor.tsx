@@ -61,13 +61,13 @@ export function PhotoEditor({ imageSrc, onCancel }: PhotoEditorProps) {
 
             const textHeight = fontSize * 1.4;
             const bgHeight = textHeight * 1.5;
-            const bgY = canvas.height / 2 - bgHeight / 2;
+            const bgY = canvas.height * 0.75 - bgHeight / 2;
 
             ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
             ctx.fillRect(0, bgY, canvas.width, bgHeight);
 
             ctx.fillStyle = "white";
-            ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+            ctx.fillText(text, canvas.width / 2, canvas.height * 0.75);
           }
 
           canvas.toBlob(
@@ -79,7 +79,7 @@ export function PhotoEditor({ imageSrc, onCancel }: PhotoEditorProps) {
               }
             },
             "image/jpeg",
-            0.9
+            1
           );
         };
         img.src = imageSrc;
